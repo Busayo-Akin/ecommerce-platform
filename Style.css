@@ -79,6 +79,7 @@ body{
 #searchbar{
     display: flex;
     justify-content: space-between;
+    margin-right: 4em;
 }
 
 #searchbar input{
@@ -117,7 +118,7 @@ body{
 
 .navbar li{
     list-style: none;
-    padding: 0px 10px;
+    padding: 0px 14px;
 }
 
 .navbar li a{
@@ -143,6 +144,10 @@ body{
     color: aliceblue;
     padding: 0px 5px 0px;
     transition: 0.3s ease;
+}
+
+#cart i{
+   margin-right: 5px;
 }
 
 #cart p:hover{
@@ -241,7 +246,7 @@ body{
     list-style: none;
 }
 
-#socialmediaicons li{
+#socialmediaicons li i{
     color: #252631;
     padding: 5px 10px;
 }
@@ -266,6 +271,7 @@ body{
  justify-content: space-between;
  align-items: center;
  color: #252631;
+ margin-right: 20px;
 }
 
 #login:hover{
@@ -281,22 +287,35 @@ body{
 #login li a{
     text-decoration: none;
     margin: 5px;
-    font: 16;
-    /* color: #252631; */
+    font: 12px;
+    color: #252631; 
 }
 
-/* #login li a:hover{
+#login li a i{
+   margin-right: 5px;
+}
+
+#login li a:hover{
     color: #28B7DB;
-} */
+}
 
 #signup li {
     list-style: none;
 }
 
-#signup li  a{
+#signup li a{
     text-decoration: none;
-    font: 16;
+    font: 12px;
+    color: #28B7DB;
+    padding: 14px 24px;
+    background-color: #252631;
+    border-radius: 12px;
+    transition: 200ms;
+}
+
+#signup li a:hover{
     color: #252631;
+    background-color: #28B7DB;
 }
 
 /* Home page */
@@ -462,14 +481,22 @@ justify-content: center;
 }
 
 .card1{
-    background-color: aliceblue;
+    background-color:rgb(247, 251, 255);
     border-radius: 10px;
     padding: 10px;
     width: 18%;
     margin: 20px;
     cursor: pointer;
+    transition: 400ms;
+    border: solid 0.5px rgb(219, 219, 219);
      /* text-align: center; */
  }
+
+ .card1:hover{
+ background-color: aliceblue ;
+ border: solid 0.5px #28B7DB;
+}
+
 .card1 img{
     border-radius: 6px;
     max-width: 100%;
@@ -519,6 +546,7 @@ padding:0px 0px  5px 5px
     cursor: pointer;
     margin-top: 5px;
     box-shadow: rgba(0, 0, 0, 0.06);
+    transition: 400ms;
 }
 
 .addtocart button i{
@@ -530,6 +558,12 @@ padding:0px 0px  5px 5px
     font-weight: 600;
     font-size: 14px;
 }
+
+.addtocart button:hover{
+    background-color: #28B7DB ;
+}
+
+
 
 
 
