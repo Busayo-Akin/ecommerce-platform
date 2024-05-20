@@ -565,6 +565,53 @@ padding:0px 0px  5px 5px
 }
 
 
+/* Sign Up Page Styling */
+#signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+#signup-container .signup-image img{
+    width: 500px;
+    object-fit: contain;
+    border-radius: 10px 0px 0px 10px;
+    /* margin-right: 50px; */
+}
+
+.signupsection{
+    background-color: aliceblue;
+    padding: 2% 6%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.signupsection p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#signup-form label{
+    font-size: 12px;
+}
+
+#signup-form input{
+    padding: 10px;
+    width: 100%;
+}
+
+#signup-form button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #252631;
+    color: #28B7DB;
+}
+
+
+
+
+
 
 
 
