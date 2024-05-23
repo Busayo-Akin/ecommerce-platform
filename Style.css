@@ -649,7 +649,7 @@ padding:0px 0px  5px 5px
 .loginsection{
     display: block;
     background-color: aliceblue;
-    padding: 100px 50px;
+    padding: 60px 50px;
     width: 400px;
     height: 400px;
     border-radius: 0px 10px 10px 0px;
@@ -672,9 +672,15 @@ padding:0px 0px  5px 5px
     border: solid 0.5px #252631;
 }
 
+.Input-group p {
+    font-size: 12px;
+    color: rgb(255, 68, 68);
+    visibility: hidden;
+}
+
 
 #login-form button{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 10px;
     width: 100%;
     background-color: #252631;
