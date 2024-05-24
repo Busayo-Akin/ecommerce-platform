@@ -576,7 +576,7 @@ padding:0px 0px  5px 5px
 
 #signup-container .signup-image img{
     width: 300px;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
     /* margin-right: 50px; */
@@ -587,14 +587,14 @@ padding:0px 0px  5px 5px
     background-color: aliceblue;
     padding: 25px 50px;
     width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 0px 10px 10px 0px;
     border: #28B7DB solid 0.5px;
 }
 
 .signupsection p{
     font-size: 12px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 #signup-form label{
@@ -672,13 +672,6 @@ padding:0px 0px  5px 5px
     border: solid 0.5px #252631;
 }
 
-.Input-group p {
-    font-size: 12px;
-    color: rgb(255, 68, 68);
-    visibility: hidden;
-}
-
-
 #login-form button{
     /* margin-top: 10px; */
     padding: 10px;
@@ -698,6 +691,39 @@ padding:0px 0px  5px 5px
 .loginsection .login-again{
     margin-top: 10px;
 }
+
+
+/* Form icon/Error and Success styling */
+
+/* .success input{
+    border: solid 3px green;
+} */
+
+
+
+.Input-group{
+    position: relative;
+    /* margin-bottom: -10px; */
+}
+.Input-group p {
+    font-size: 12px;
+    color: rgb(255, 68, 68);
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+}
+
+.Input-group i {
+position: absolute;
+right: 10px;
+top: 30px;
+visibility: hidden;
+}
+.success i.fa-circle-check{
+    visibility:visible;
+    }
+
 
 
 

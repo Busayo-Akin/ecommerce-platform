@@ -85,15 +85,30 @@
 
         <div id="signup-form">
             <form action="#">
-                <label for="fullname">Full Name</label><br>
-                <input type="text" id="fullname" name="fullname" placeholder="Ade Ekimogun"><br>
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email" placeholder="xyz@gmail.com"> <br>
-                <label for="password">Password</label> <br>
-                <input type="password" id="password" name="password" placeholder=""><br>
-                <label for="password2"> Confirm Password</label> <br>
-                <input type="password" id="password2" name="password2" placeholder=""> <br>
-                <button><a href="#"></a> Signup</button>
+                <div class="Input-group">
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <p>Error Message</p>
+                </div>
+                
+                <div class="Input-group">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="signupEmail" name="email"> <br>
+                    <p>Error Message</p>
+                </div>
+                
+                <div class="Input-group">
+                    <label for="password">Password</label> <br>
+                    <input type="password" id="SignupPassword" name="password" placeholder=""><br>
+                    <p>Error Message</p>
+                </div>
+    
+                <div class="Input-group">
+                    <label for="password2"> Confirm Password</label> <br>
+                    <input type="password" id="signupPasswordCon" name="password2" placeholder=""><br>
+                    <p>Error Message</p>
+                </div>
+                <button onclick="validateInput()"><a href="#"></a> Signup</button>
             </form>
             <p class="signup-again">I have an account <a href="login.html">Login</a></p>
         </div>
@@ -102,4 +117,5 @@
  </div>
 
 </body>
+<script src="Script.js"></script>
 </html>
