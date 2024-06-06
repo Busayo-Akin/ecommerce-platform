@@ -706,24 +706,24 @@ padding:0px 0px  5px 5px
 
 
 
-.Input-group{
+.inputControl{
     position: relative;
-    /* margin-bottom: -10px; */
+    margin-bottom: 5px;
 }
-.Input-group .error {
+.inputControl .error {
     font-size: 12px;
     color: rgb(255, 68, 68);
-    visibility: hidden;
+    visibility: block;
     position: absolute;
     right: 10px;
     top: 32px;
 }
 
-.Input-group .error input{
+.inputControl .error input{
     border-color: rgb(255, 68, 68);
 }
 
-.Input-group .success input{
+.inputControl .success input{
     border-color: #09c372;
 }
 

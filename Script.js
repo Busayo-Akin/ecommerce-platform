@@ -1,18 +1,26 @@
 // SignUp
 
-const form = document.getElementById("form")
-const userName = document.getElementById("fullname")
-const email = document.getElementById("signupEmail")
-const password = document.getElementById("signupPassword")
-const confirmPassword = document.getElementById("SignupPasswordCon")
+function signUp() {
+const form = document.getElementById("form").value;
+let userName = document.getElementById("fullname").value;
+let email = document.getElementById("signupEmail").value;
+let password = document.getElementById("signupPassword");
+let confirmPassword = document.getElementById("SignupPasswordCon");
+
+let userSignUp = {
+    userName: userName,
+    email: email,
+    password: password,
+    confirmPassword: confirmPassword
+}
+console.log (userSignUp)
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
-
     validateInputs()
 })
 
-const error = (element, message) =>{
+const errorMes = (element, message) =>{
     let inputControl = element.parentElement
     let errorDisplay = inputControl.querySelector ('.error');
 
@@ -21,7 +29,7 @@ const error = (element, message) =>{
     inputControl.classList.remove('Success')
 }
 
-const Success = element =>{
+const SuccessMes = element =>{
     let inputControl = element.parentElement
     let errorDisplay = inputControl.querySelector('.error');
 
@@ -39,16 +47,17 @@ const validateEmail = (email) => {
   };
 
 
-function validateInputs() {
+const validateInputs = () => {
  const userNameValue = userName.value.trim();
  const emailValue = email.value.trim();
- const passwordValue = password.value.trim();
+ const passwordValue = password;
  const confirmPasswordValue = confirmPassword.value.trim();
 
-    if (userName.value === ""){
-        error (userName, "Full name can not be empty")
-    }else{
-        Success (userName)
+    if (userNameValue === ""){
+        setError(userName, "Full name can not be empty");
+    } else {
+        setSuccess (userName);
     }
 
+}
 }
