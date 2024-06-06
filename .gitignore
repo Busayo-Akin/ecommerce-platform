@@ -1,8 +1,8 @@
 # ignore all .Image files
-*.svg
-*.jpg 
-*.png
-*.webpg
+# *.svg
+# *.jpg 
+# *.png
+# *.webpg
 .env
 .env*
 /vendor
