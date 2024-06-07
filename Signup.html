@@ -87,25 +87,36 @@
             <form action="#" id="form">
                 <div class="inputControl">
                     <label for="fullname">Full Name</label><br>
-                    <input type="text" id="fullname" name="fullname"><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ade Olanike"><br>
                     <div class="error"></div>
                 </div>
                 
-                <div class="inputControl errorMes ">
+                <div class="inputControl errorMes">
                     <label for="email">Email</label><br>
-                    <input type="text" id="signupEmail" name="email"> <br>
+                    <input type="email" id="email" name="email" placeholder="gm@gmail.com"> <br>
                     <div class="error"></div>                </div>
+
+                <div class="inputControl">
+                        <label for="PhoneNumber">Phone Number</label><br>
+                        <input type="number" id="PhoneNumber" name="PhoneNumber" placeholder="08012312323"><br>
+                        <div class="error"></div>
+                </div>
                 
                 <div class="inputControl">
                     <label for="password">Password</label> <br>
-                    <input type="password" id="SignupPassword" name="password" placeholder=""><br>
+                    <input type="password" id="password" name="password"><br>
                     <div class="error"></div>                </div>
     
                 <div class="inputControl">
-                    <label for="password2"> Confirm Password</label> <br>
-                    <input type="password" id="signupPasswordCon" name="password2" placeholder=""><br>
-                    <div class="error"></div>                </div>
-                <button type="submit"><a href="#"></a> Signup</button>
+                    <label for="confirmPassword"> Confirm Password</label> <br>
+                    <input type="password" id="confirmPassword" name="password2"><br>
+                    <div class="error"></div>           
+                    
+                    <div id="check">
+                        <input type="checkbox" id="checkbox" name="checkbox"><label for="checkbox">You are agreeing to the terms of service and privacy policy</label></div>
+
+                 </div><button type="submit" onsubmit="signUp()"><a href="#"></a> Signup</button>
+                 
             </form>
             <p class="signup-again">I have an account <a href="login.html">Login</a></p>
         </div>
