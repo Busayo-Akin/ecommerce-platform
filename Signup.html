@@ -84,38 +84,52 @@
         <p>Enter your details to create account</p>
 
         <div id="signup-form">
-            <form action="#" id="form">
-                <div class="inputControl">
-                    <label for="fullname">Full Name</label><br>
-                    <input type="text" id="fullname" name="fullname" placeholder="Ade Olanike"><br>
-                    <div class="error"></div>
-                </div>
-                
-                <div class="inputControl errorMes">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="gm@gmail.com"> <br>
-                    <div class="error"></div>                </div>
+            <form action="#" id="form" class="form">
 
-                <div class="inputControl">
-                        <label for="PhoneNumber">Phone Number</label><br>
-                        <input type="number" id="PhoneNumber" name="PhoneNumber" placeholder="08012312323"><br>
-                        <div class="error"></div>
+                <div class="inputControl success error">
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <small>Error Message</small>
                 </div>
                 
-                <div class="inputControl">
+                <div class="inputControl success error">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="please input your email address"> <br>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <small>Error Message</small>              
+                  </div>
+
+                <!-- <div class="inputControl success error">
+                        <label for="phoneNumber">Phone Number</label><br>
+                        <input type="text" id="phoneNumber" name="PhoneNumber" placeholder="please input your phone number"><br>
+                        <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                        <small>Error Message</small>
+                </div> -->
+                
+                <div class="inputControl success error">
                     <label for="password">Password</label> <br>
                     <input type="password" id="password" name="password"><br>
-                    <div class="error"></div>                </div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <small>Error Message</small>       
+                </div>
     
-                <div class="inputControl">
+                <div class="inputControl success error">
                     <label for="confirmPassword"> Confirm Password</label> <br>
                     <input type="password" id="confirmPassword" name="password2"><br>
-                    <div class="error"></div>           
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <small>Error Message</small>  
+                </div>         
                     
                     <div id="check">
                         <input type="checkbox" id="checkbox" name="checkbox"><label for="checkbox">You are agreeing to the terms of service and privacy policy</label></div>
 
-                 </div><button type="submit" onsubmit="signUp()"><a href="#"></a> Signup</button>
+                <button type="submit">Signup</button>
                  
             </form>
             <p class="signup-again">I have an account <a href="login.html">Login</a></p>

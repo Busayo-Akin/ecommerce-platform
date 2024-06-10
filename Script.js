@@ -1,12 +1,111 @@
 // SignUp
 
-function signUp() {
-    let userName = document.getElementById("fullname").value;
-    
-    let userdata = {
-        userName: userName
+const form = document.getElementById("form");
+const fullname = document.getElementById("fullname");
+const email = document.getElementById("email");
+// const phoneNumber = document.getElementById("PhoneNumber");
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
+
+
+form. addEventListener ("submit", (e) => {
+    e.preventDefault();
+    checkInputs()
+}) 
+
+function checkInputs() {
+    const fullnamevalue = fullname.value;
+    const emailvalue = email.value;
+    // const phoneNumberValue = phoneNumber.value;
+    const passwordvalue = password.value;
+    const confirmPasswordValue = confirmPassword.value;
+
+    if(fullnamevalue === ""){
+        setError(fullname,"This field cannot be blank");
+
     }
+    else{
+        setSuccess (fullname);
+
+    }
+
+    if(emailvalue === ""){
+        setError(email,"This field cannot be blank");
+    }
+    else if (!isemail(emailvalue)){
+        setError(email,"Invalid email input");
+    }
+    else {
+        setSuccess (email);
+    }
+
+    // if (phoneNumberValue === ""){
+    //     setError (phoneNumber, "This field cannot be blank");
+    // }
+    // else if (phoneNumberValue === String){
+    //     setError (phoneNumber, `Input should be Number`);
+    // } 
+    // else{
+    //     setSuccess (phoneNumber);
+    // }
+
+    if (passwordvalue === ""){
+        setError (password,"Password cannot be empty");
+    } else if (passwordvalue.lenght<=6){
+        setSuccess (password,"Input not up to six (6)character");
+    }
+    else{
+        setSuccess (password);}
+    
+    if (confirmPasswordValue === ""){
+            setError (confirmPassword,"Password cannot be empty");}
+
+    if (confirmPasswordValue !== password){
+        setError ( confirmPassword,"Password and Confirm password does not match");
+    }
+
+    else{
+        setSuccess (confirmPassword);
+    }
+
 }
+
+function setError(input, msg) {
+    const inputControl = input.parentElement;
+    const small=inputControl.querySelector("small");
+	small.innerText=msg;
+    small.style.visibility = "visible"
+	// add error class
+	inputControl.className="inputControl error";
+
+}
+
+function setSuccess(input){
+	const inputControl=input.parentElement;
+    const small=inputControl.querySelector("small");
+	small.innerText='';
+	inputControl.className="inputControl success";
+
+}
+
+function isemail(email){
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+}
+
+
+
+// let x = "Ade ola"
+
+// console.log (x)
+
+// function signUp() {
+//     let userName = document.getElementById("fullname").value;
+    
+//     let userdata = {
+//         userName: userName
+//     }
+// }
 
 
 // function signUp() {

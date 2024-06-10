@@ -605,7 +605,7 @@ padding:0px 0px  5px 5px
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    border: solid 0.5px #252631;
+    border: solid 1px #252631;
     color: #4F5169;
 }
 
@@ -722,23 +722,40 @@ padding:0px 0px  5px 5px
 
 .inputControl{
     position: relative;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
-.inputControl .error {
-    font-size: 12px;
-    color: rgb(255, 68, 68);
-    visibility: block;
+
+.inputControl i{
     position: absolute;
     right: 10px;
     top: 32px;
 }
 
-.inputControl .error input{
+.inputControl small {
+    font-size: 10px;
+    color: rgb(255, 68, 68);
+    visibility: hidden;
+    /* position: absolute; */
+    right: 10px;
+    top: 32px;
+}
+
+.inputControl.error {
     border-color: rgb(255, 68, 68);
 }
 
-.inputControl .success input{
+.inputControl.success {
     border-color: #09c372;
+}
+
+.inputControl i.fa-circle-check{
+    visibility: hidden;
+    color: #09c372;
+}
+
+.inputControl i.fa-circle-xmark{
+    visibility: hidden;
+    color: rgb(255, 68, 68);
 }
 
 
